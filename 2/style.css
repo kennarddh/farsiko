@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.card-wrap-2
+{
+    overflow-x: auto;
+    width: 50rem;
+    margin: auto;
+    background-color: red;
+}
+.card-wrap
+{
+    display: flex;
+    background-color: blue;
+    width: 300%;
+}
+.card
+{
+    width: 80rem;
+    background-color: whitesmoke;
+    border: black 1px solid;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+}
+.card-item
+{
+    margin: 0.25rem 0;
+}
+.profile
+{
+    display: flex;
+}
+.img-profile
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: black 1px solid;
+}
+.name-top
+{
+    align-items: center;
+}
+.post-img
+{
+    width: 100%;
+}
+.name, .likes
+{
+    font-weight: bold;
+}
+.icon
+{
+    width: 1.25rem;
+    margin: 0.25rem;
+}
+.icon-wrap
+{
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+    .card-wrap-2
+    {
+
+    }
+    .card-wrap
+    {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .card
+    {
+        margin: 0;
+        margin-bottom: 1rem;
+        width: 17rem;
+    }
+}
