@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body
+{
+    background-color: #272527;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0E565D;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 1rem;
+}
+
+.navbar .right
+{
+    margin-right: 3rem;
+}
+.navbar .left
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    align-items: flex-end;
+}
+.navbar .left .item.score
+{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.navbar .right .item, .navbar .left .item, .navbar .center .item
+{
+    text-decoration: none;
+    color: #FCF8D9;
+    margin-right: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .right .item
+{
+    margin: 0 0.5rem;
+}
+.navbar .center .item
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.smaller
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.active
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    padding-top: 5rem;
+}
+.header h1
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FCF8D9;
+}
+.search
+{
+    margin-top: 3rem;
+}
+.search .wrap
+{
+    border: 1px solid #C4C4C4;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+.search .wrap .input
+{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+.search .wrap .input::placeholder
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C4C4C4;
+}
+.section-game
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 5rem 0 5rem;
+}
+.section-game .card
+{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #FCF8D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    box-shadow: 2px 4px 8px rgba(252, 248, 217, 0.1);
+    border-radius: 10px;
+}
+.section-game .card .image
+{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #EDE3E3;
+    border-radius: 10px;
+}
+.section-game .card .body .title
+{
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.section-game .card .body .description
+{
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+.section-game .card .body .played
+{
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #AFA1A1;
+}
+.section-game .card .body .detail-wrap .detail
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;   
+    color: #E53045;
+}
+.section-game .card .body .detail-wrap
+{
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}

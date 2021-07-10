@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body
+{
+    background-color: #272527;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0E565D;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 1rem;
+}
+
+.navbar .right
+{
+    margin-right: 3rem;
+}
+.navbar .left
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    align-items: flex-end;
+}
+.navbar .left .item.score
+{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.navbar .right .item, .navbar .left .item, .navbar .center .item
+{
+    text-decoration: none;
+    color: #FCF8D9;
+    margin-right: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .right .item
+{
+    margin: 0 0.5rem;
+}
+.navbar .center .item
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.smaller
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.active
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    padding-top: 5rem;
+}
+.header h1
+{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FCF8D9;
+}
+.profile
+{
+    margin-top: 5rem;
+    height: 10rem;
+}
+.profile .wrap
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.profile .wrap .image
+{
+    height: 100%;
+}
+.profile .wrap .body
+{
+    padding-right: 10rem;
+}
+.profile .wrap .body .name
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FCF8D9;
+}
+.profile .wrap .body .score
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FCF8D9;
+}
+.profile .wrap .body .email
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FCF8D9;
+}
+.profile .wrap .button
+{
+    background: #E53045;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+.profile .wrap .button:hover
+{
+    background-color: transparent;
+    color: #E53045;
+    border: 1px #E53045 solid;
+}

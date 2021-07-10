@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body
+{
+    background-color: #272527;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0E565D;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 1rem;
+}
+
+.navbar .right
+{
+    margin-right: 3rem;
+}
+.navbar .left
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    align-items: flex-end;
+}
+.navbar .left .item.score
+{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.navbar .right .item, .navbar .left .item, .navbar .center .item
+{
+    text-decoration: none;
+    color: #FCF8D9;
+    margin-right: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .right .item
+{
+    margin: 0 0.5rem;
+}
+.navbar .center .item
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.smaller
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar .item.active
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    padding-top: 5rem;
+}
+.header h1
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FCF8D9;
+}
+.detail
+{
+    padding: 3rem 10rem 0 10rem;
+}
+.back
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+.back p
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FCF8D9;
+    margin-left: 1rem;
+}
+.detail .title
+{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #64BEB8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+.detail .title p
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FCF8D9;
+}
+.detail .title h3
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FCF8D9;
+}
+.detail .button .item
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FCF8D9;
+}
+.detail .button
+{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.detail .button .play-button
+{
+    background-color: #E53045;
+    border-radius: 10px;
+    width: 48%;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+}
+.detail .button .play-button:hover
+{
+    background-color: transparent;
+    color: #E53045;
+    border: 1px #E53045 solid;
+}
+.detail .button .play-button .item
+{
+    margin-right: 2rem;
+}
+.detail .button .status
+{
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    width: 48%;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+}
+.detail .button .status.played
+{
+    background-color: #0E565D;
+}
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.detail .list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+.detail .list .header
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FCF8D9;
+    background-color: #0E565D;
+    border-radius: 10px 10px 0px 0px;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+.detail .list .playerlist
+{
+    width: 30%;
+}
+.detail .list .description
+{
+    width: 65%;
+}
+.detail .list .playerlist .list-player
+{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FCF8D9;
+    border-radius: 0 0 10px 10px;
+}
+.detail .list .playerlist .list-player .item
+{
+    padding: 1rem 2rem;
+    border-bottom: 0.5px #C4C4C4 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.detail .list .playerlist .list-player p
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3A3A3A;
+}
+.detail .list .playerlist .list-player .item:last-child
+{
+    border-bottom: none;
+}
+.detail .list .description .description-inner
+{
+    background: #FCF8D9;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+}
