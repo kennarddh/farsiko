@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container .slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .slider .redPrev, .container .slider .greenPrev, .container .slider .bluePrev
+{
+    padding: 20px;
+    border-radius: 25px;
+    border: black 1px solid;
+    margin: 10px 0;
+}
+.container .slider input
+{
+    margin: 10px 0;
+}
+.container .button button
+{
+    padding: 10px;
+}
