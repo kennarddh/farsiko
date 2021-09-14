@@ -1,0 +1,121 @@
+/* ========== fontface ========== */
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('font/OpenSans-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========== End fontface ========== */
+
+/* ========== HTML, BODY ========== */
+body {
+  background-color: rgba(156, 131, 95, 1);
+  width: 100%;
+  overflow: hidden;
+}
+/* ========== End HTML, BODY ========== */
+
+/* ========== NAVIGASI ========== */
+.navbar {
+  height: 12vh;
+  font: 12px/16px 'open_sansbold', sans-serif;
+}
+/* ========== End NAVIGASI ========== */
+
+/* ========== BATU, GUNTING, KERTAS ========== */
+li {
+  margin-bottom: 20px;
+}
+
+li img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+/* player */
+.listplayer li img:hover {
+  transform: scale(1.2) rotate(-20deg);
+  cursor: pointer;
+}
+
+.terpilih {
+  background-color: rgb(196, 196, 196, 1);
+  border-radius: 20px;
+}
+
+.terpilihCom {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(196, 196, 196, 1);
+  border-radius: 20px;
+  animation: fadeOut 0.6s alternate forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    background-color: rgb(196, 196, 196, 1);
+  }
+
+  100% {
+    background-color: rgb(196, 196, 196, 0);
+  }
+}
+/* end player */
+
+/* ========== End BATU, GUNTING, KERTAS========== */
+
+/* ========== HASIL ========== */
+.hasil {
+  font-size: 72px;
+  font-weight: bolder;
+  color: rgb(189, 0, 0);
+  line-height: 390px;
+}
+
+.MENANG,
+.KALAH,
+.SERI {
+  height: 350px;
+  width: 350px;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-5deg);
+  animation: animasiHasil 0.3s alternate forwards;
+}
+
+.MENANG {
+  background-image: url(img/WIN.png);
+}
+
+.KALAH {
+  background-image: url(img/COMWIN.png);
+}
+
+.SERI {
+  background-image: url(img/DRAW2.png);
+}
+
+@keyframes animasiHasil {
+  0% {
+    background-size: 250px;
+  }
+  50% {
+    background-size: 220px;
+  }
+  100% {
+    background-size: 270px;
+  }
+}
+/* ========== End HASIL ========== */
+
+/* ========== REFRESH ========== */
+.refresh {
+  margin-top: -30px;
+}
+
+.refresh:hover {
+  transform: scale(1.2) rotate(-20deg);
+}
+/* ========== REFRESH End ========== */
